@@ -2,3 +2,26 @@ na hali
 249882 megerosito
 irjon függvényt mely visszaadja ket int tipusu paraméterének legnagyobb közös osztoját
 látod ezt?
+
+#include <stdio.h>
+
+int lnko(int a, int b){
+	int i, lnko_tmp;
+	
+	for(i=1; i <= a && i <= b; ++i){
+		if(a%i==0 && b%i==0){
+			lnko_tmp = i;
+  		}
+    }
+    return lnko_tmp;
+}
+
+int main(){
+	int n1, n2;
+	printf("Adja meg az elso szamot: ");
+	scanf("%d", &n1);
+	printf("\nAdja meg a masodik szamot: ");
+	scanf("%d", &n2);
+	printf("\nLegnagyobb kozos oszto: %d", lnko(n1, n2));
+	return 0;
+}
