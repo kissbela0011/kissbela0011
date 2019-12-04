@@ -3,12 +3,16 @@
 int lnko(int a, int b){
 	int i, lnko_tmp;
 	
-	for(i=1; i <= a && i <= b; ++i){
-		if(a%i==0 && b%i==0){
-			lnko_tmp = i;
-  		}
+	a = ( a > 0) ? a : -a;
+    b = ( b > 0) ? b : -b;
+	
+	while(a!=b){
+        if(a > b)
+            a -= b;
+        else
+            b -= a;
     }
-    return lnko_tmp;
+    return a;
 }
 
 int main(){
@@ -21,3 +25,6 @@ int main(){
 	return 0;
 }
 
+
+
+Működik negatív inputtal is!
