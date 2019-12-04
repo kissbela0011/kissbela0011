@@ -3,6 +3,8 @@ na hali
 irjon függvényt mely visszaadja ket int tipusu paraméterének legnagyobb közös osztoját
 látod ezt?
 
+dobj még be feladatot.
+
 #include <stdio.h>
 
 int lnko(int a, int b){
