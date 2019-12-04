@@ -1,10 +1,3 @@
-na hali
-249882 megerosito
-irjon függvényt mely visszaadja ket int tipusu paraméterének legnagyobb közös osztoját
-látod ezt?
-
-dobj még be feladatot.
-
 #include <stdio.h>
 
 int lnko(int a, int b){
@@ -27,12 +20,4 @@ int main(){
 	printf("\nLegnagyobb kozos oszto: %d", lnko(n1, n2));
 	return 0;
 }
-ennyi eleg
-ez biztos jo? mert akkor kilépek 
 
-Ez tuti jó. 
-Biztos elég csak 1? 
-igen biztos
-koszi szepen ha kijottem irok
-
-OK
