@@ -27,3 +27,5 @@ int main(){
 	printf("\nLegnagyobb kozos oszto: %d", lnko(n1, n2));
 	return 0;
 }
+ennyi eleg
+ez biztos jo? mert akkor kilépek 
