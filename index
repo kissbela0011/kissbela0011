@@ -1,1 +1,99 @@
+#include <stdio.h>
 
+// 1. feladat
+
+int main(){
+	int a;
+	printf("Add meg a szamot: ");
+	scanf("%d", &a);
+	printf("%d", 2*a);
+	return 0;
+}
+
+#include <stdio.h>
+
+// 2. feladat
+
+int main(){
+	int a, b;
+	printf("Add meg a teglalap A oldalat: ");
+	scanf("%d", &a);
+	printf("Add meg a teglalap B oldalat: ");
+	scanf("%d", &b);
+	printf("A teglalap terulete: %d, kerulete: %d", a*b, 2*(a+b));
+	return 0;
+}
+
+#include <stdio.h>
+
+// 3. feladat
+
+int main(){
+	int a, i;
+	printf("Add meg a szamot: ");
+	scanf("%d", &a);
+	if(a < 16 || a > 32){
+		printf("A szamnak 16 es 32 kozze kell esnie!");
+	}else{
+		while(a > 0){
+			printf("%2d|%-2d \n", a, a%2);
+			a /= 2;
+		}
+	}
+	return 0;
+}
+
+
+#include <stdio.h>
+
+// 5. feladat
+
+int main(){
+	int a, b;
+	printf("Add meg az A szamot: ");
+	scanf("%d", &a);
+	printf("Add meg a B szamot: ");
+	scanf("%d", &b);
+	a = a+b;
+	b = a-b;
+	a = a-b;
+	printf("A: %d, B: %d", a, b);
+	return 0;
+}
+
+#include <stdio.h>
+
+// 7. feladat
+
+int main(){
+	int a,b;
+	printf("Az en fizum: ");
+	scanf("%d", &a);
+	printf("Az fonok fizuja: ");
+	scanf("%d", &b);
+	(a>=b) ? printf("Minden ok!") : printf("Meglatogatom otthon a fonok feleseget munkaidoben.");
+	return 0;
+}
+
+#include <stdio.h>
+
+// 8. feladat
+
+int main(){
+	char a,b;
+	int i;
+	printf("Az elso karakter: ");
+	scanf("%c", &a);
+	printf("A masodik karakter: ");
+	scanf(" %c", &b);
+	if(a < b){
+		for(i = a; i <= b; i++){
+			printf("%c ", i);
+		}
+	}else{	 
+		for(i = a; i >= b; i--){
+			printf("%c ", i);
+		}
+	}
+	return 0;
+}
